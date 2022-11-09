@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-RegularItalic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-Semibold.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-SemiboldItalic.wofff");
+    font-weight: bold;
+    font-style: italic;
+}

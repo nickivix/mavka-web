@@ -1,0 +1,154 @@
+.background {
+    font-family: 'Gilroy';
+}
+
+/* main */
+
+.page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 105px 0px;
+    position: absolute;
+    width: 945px;
+    height: 100%;
+    left: calc(50% - 945px/2);
+    top: 0px;
+    background-color: #FFFFFF;
+}
+
+/* answers */
+
+.main_answers>p {
+    font-size: 18px;
+}
+
+.answers_frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.answer {
+    width: 50;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.variant {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    font-size: 18px;
+}
+
+.inp {
+    padding: 8px 16px;
+    width: 102px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Gilroy';
+}
+
+.inp:focus {
+    outline: 0;
+}
+
+.correct_answer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.correct_number {
+    margin-top: 17px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.comment {
+    font-size: 16px;
+}
+
+/* result */
+
+.result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.result_frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.correct_message {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.correct_result {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.btn {
+    width: 282px;
+    height: 38.5px;
+    background: #000000;
+    border-radius: 10px;
+    margin-top: 14px;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Gilroy';
+    font-weight: bold;
+}

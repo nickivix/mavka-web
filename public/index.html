@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" id="123"/>
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Безкоштовна платформа, створена звичайними українцями для українців. Проходь тести, вчися на поясненнях, отримуй рекомендації!"
+    />
+    <meta property="og:url"                content="http://zno.mavka.org" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="мавка зно - Готуйся по-новому!" />
+    <meta property="og:description"        content="Проходь тести, вчися на поясненнях, отримуй рекомендації! Безкоштовна платформа, створена звичайними українцями для українців." />
+    <meta property="og:image"              content="http://zno.mavka.org/logo512.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170266718-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-170266718-1');
+    </script>
+
+    <title>мавка зно - Готуйся по-новому!</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          macros: {
+            cot: ['\\mathop{\\rm ctg}\\nolimits', 0],
+            tan: ['\\mathop{\\rm tg}\\nolimits', 0],
+            ctg: ['\\mathop{\\rm ctg}\\nolimits', 0],
+            tg: ['\\mathop{\\rm tg}\\nolimits', 0],
+          },
+        },
+        svg: {
+          fontCache: 'global',
+        },
+        options: {
+          renderActions: {
+            addMenu: [0, '', '']
+          }
+        },
+      };
+    </script>
+    <script>
+      const eps = 1e-2;
+      let images = document.getElementsByTagName("img");
+      let n = images.length;
+      function upd (x) {
+        //console.log(images[x]);
+        images[x].style.width = 0 + "px";
+        let l = 0, r = Math.min(images[x].naturalWidth, Math.max(Math.min(images[x].parentNode.parentElement.clientWidth * (window.innerWidth <= 992 ? 0.6 : 0.8), window.innerWidth * 0.5), 200));
+        while (l + eps < r) {
+          let mid = (l + r + eps) / 2.0;
+          let h = mid * images[x].naturalHeight / images[x].naturalWidth;
+          if (h > window.innerHeight * 0.5 || h * mid / (window.innerHeight * window.innerWidth) > 0.2) r = mid - eps;
+          else l = mid;
+        }
+        images[x].style.width = l + "px";
+      }
+
+
+      function update () {
+        images = document.getElementsByTagName("img");
+        n = images.length;
+        for (let x in images) {
+          if (typeof images[x] != "object") continue;
+          //alert(x);
+          if (images[x].naturalWidth != 0) {
+            upd(x);
+          }
+          else {
+            images[x].onload = function () {
+              upd(x);
+            };
+          }
+        }
+      }
+
+      for (let x in images) {
+        if (typeof images[x] != "object") continue;
+        if (images[x].naturalWidth != 0) {
+          upd(x);
+        }
+        else {
+          images[x].onload = function () {
+            upd(x);
+          };
+        }
+      }
+      window.onresize = update;
+    </script>
+
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+
+    <div id="FAKE"></div>
+    <div id="FAKE1"></div>
+
+    <script>
+      function f () {
+        if (MathJax.startup) {
+          MathJax.typesetPromise().then(() => {
+            // modify the DOM here
+            MathJax.typesetPromise();
+          }).catch((err) => console.log(err.message));
+        }
+      }
+      document.getElementById('FAKE').onclick = f;
+      document.getElementById('FAKE1').onclick = update;
+    </script>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+
+</html>

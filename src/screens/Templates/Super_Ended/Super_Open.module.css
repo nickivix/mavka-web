@@ -1,0 +1,167 @@
+.background {
+    font-family: 'Gilroy';
+}
+
+/* main */
+
+.page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 105px 0px;
+    position: absolute;
+    width: 945px;
+    height: 100%;
+    left: calc(50% - 945px/2);
+    top: 0px;
+    background-color: #FFFFFF;
+}
+
+.question_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 85.5px;
+}
+
+.title_bar {
+    font-size: 22px;
+    line-height: 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.end {
+    width: 157.5px;
+    height: 42.5px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0px 0px;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Gilroy';
+}
+
+.question_frame p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* result */
+
+.result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+.result_frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 16px;
+    width: 298px;
+    height: 205px;
+}
+
+.correct_message {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.correct_result {
+    font-size: 18px;
+    margin-top: 14px;
+}
+
+.btn {
+    width: 298px;
+    height: 42.5px;
+    background: #000000;
+    border-radius: 10px;
+    margin-top: 14px;
+    color: white;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Gilroy';
+    font-weight: 600;
+}
+
+.topic_frame {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.stats {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.topic_frame_text {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.comment_frame {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.comment_frame_text {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.video_explanation_frame {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+/* video frame */
+
+.video {
+    width: 459px;
+    height: 275.4px;
+    background-color: black;
+}

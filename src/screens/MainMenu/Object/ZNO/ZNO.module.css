@@ -1,0 +1,71 @@
+.zno_choose {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 2% 5px;
+    min-width: 96%;
+    max-width: 96%;
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px white solid;
+    border-radius: 10px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-bottom: 7px;
+    -webkit-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+    margin-top: 5px;
+}
+
+.zno_choose:focus {
+    outline: 0;
+}
+
+.zno_choose:hover {
+    border: 1px grey solid;
+    cursor: pointer;
+}
+
+.wrapper {
+    padding: 16px;
+}
+
+.description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.results {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.active {
+    border: 1px black solid;
+}

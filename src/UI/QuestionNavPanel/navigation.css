@@ -1,0 +1,56 @@
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+li {
+    color: #000000;
+    display: block;
+    float: left;
+    position: relative;
+    text-decoration: none;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #000000;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+ul li ul {
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 108px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: none;
+}
+
+ul li:hover>ul, ul li:focus-within>ul,
+/* this is the line we add */
+
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}

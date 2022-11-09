@@ -1,0 +1,202 @@
+.background {
+    font-family: 'Gilroy';
+}
+
+/* main */
+
+.page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 105px 0px;
+    position: absolute;
+    width: 945px;
+    height: 220%;
+    left: calc(50% - 945px/2);
+    top: 0px;
+    background-color: #FFFFFF;
+}
+
+.inp {
+    padding: 8px 16px;
+    width: 102px;
+    height: 33px;
+    background: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Gilroy';
+}
+
+.inp:focus {
+    outline: 0;
+}
+
+/* answers */
+
+.answers_frame {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.answer {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.variant {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 21px;
+}
+
+.variant>div {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.number {
+    vertical-align: middle;
+    font-size: 22px;
+    line-height: 27px;
+    margin-right: 21px;
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.icon>svg {
+    padding-bottom: 4px;
+    padding-right: 8px;
+    vertical-align: middle;
+}
+
+.comment {
+    font-size: 16px;
+}
+
+.check {
+    margin-top: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.correct_answer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.correct_number {
+    margin-top: 17px;
+}
+
+/* result */
+
+.wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 30%;
+}
+
+@media (max-width: 992px) {
+    .page {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 105px 0px;
+        position: absolute;
+        width: 95%;
+        height: 220%;
+        left: calc(50% - 95%/2);
+        top: 0px;
+    }
+}
+
+@media (min-width: 993px) {
+    .page {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 105px 0px;
+        position: absolute;
+        width: 950px;
+        height: 220%;
+        left: calc(50% - 950px/2);
+        top: 0px;
+    }
+}

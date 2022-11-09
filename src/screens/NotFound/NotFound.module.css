@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-RegularItalic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-Semibold.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-SemiboldItalic.wofff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    text-align: center;
+
+}
+.alert {
+    font-family: Gilroy;
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+    line-height: 33px;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+
+@media (max-width: 600px) {
+    .alert > img{
+       width: 100%;
+       height: 100%;
+    }
+
+
+}

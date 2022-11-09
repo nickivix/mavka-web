@@ -1,0 +1,217 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-Regular.woff");
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-RegularItalic.woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-Semibold.woff");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url("https://raw.githubusercontent.com/mavka-org/mavka-web/master/src/fonts/Gilroy-SemiboldItalic.wofff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+.page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.window {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 282px;
+    height: 500px;
+    margin: auto;
+    font-family: Gilroy;
+}
+
+.logo {
+    color: black;
+    font-size: 18px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.logo:focused {
+    color: black;
+}
+
+.header {
+    font-size: 36px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+}
+
+.errMsg {
+    text-align: center;
+}
+
+.btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.btn_google {
+    width: 282px;
+    height: 42.5px;
+    background: #FFBE0B;
+    border-radius: 10px;
+    border: white;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 25px;
+    font-family: Gilroy;
+    font-size: 20px;
+    line-height: 25px;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn_google:focus {
+    outline: 0;
+}
+
+.btn_google:hover {
+    background: black;
+    color: white;
+}
+
+.btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 10px 25px 25px 25px;
+    font-family: Gilroy;
+}
+
+.btn {
+    font-family: Gilroy;
+    width: 282px;
+    height: 42.5px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: 10px 25px 25px 25px;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.inp_wrapper>input {
+    font-size: Gilroy;
+    width: 282px;
+    height: 42.5px;
+    left: 0px;
+    top: 14px;
+    background: #E5E5E5;
+    border: 1px solid #E5E5E5;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 8px 16px;
+    line-height: 22px;
+}
+
+.password_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-shrink: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.inp_wrapper>input:focus {
+    outline: 0;
+}
+
+.account {
+    color: gray;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.agreement {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: gray;
+}
